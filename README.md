@@ -61,7 +61,7 @@ Class distribution across 7,707 films — severe imbalance toward R-rated conten
 
 R-rated films represent ~60% of the dataset. NC-17 accounts for fewer than 0.5% — the central engineering challenge of this project.
 
-![Dataset composition bar chart](tree/images/01_dataset_composition.png)
+![Dataset composition bar chart](tree/main/images/01_dataset_composition.png)
 
 ### Methodological Differences
 
@@ -85,7 +85,7 @@ Both analyses converged on gradient boosting as the strongest algorithm, and bot
 | Tamara | XGBoost + SMOTE | 77.8% |
 | Tamara | Random Forest | 76.5% |
 
-![Best model comparison bar chart](tree/images/02_model_comparison.png)
+![Best model comparison bar chart](tree/main/images/02_model_comparison.png)
 
 Kristina's model additionally scored AUC 0.917, F1 0.793, MCC 0.621.
 
@@ -95,7 +95,7 @@ For a four-class problem with severe imbalance, both results carry meaningful si
 
 Accuracy tells you how often the model was right. Where it was wrong is the more useful story.
 
-![Error concentration schematic showing the PG-13 to R boundary as the dominant failure mode](tree/images/04_error_concentration.png)
+![Error concentration schematic showing the PG-13 to R boundary as the dominant failure mode](tree/main/images/04_error_concentration.png)
 
 Errors concentrated almost entirely at the PG-13 ⇄ R boundary — adjacent-category confusion, not random misclassification. Films with elevated profanity or moderate violence codes that analysts had rated PG-13 were frequently predicted as R, and vice versa. This reflects genuine ambiguity in the underlying decision, not model weakness — it's contested in practice.
 
@@ -120,7 +120,7 @@ Both models independently identified the same feature hierarchy, ranked by infor
 7. Drug code
 8. Plot text (TF-IDF)
 
-![Feature importance horizontal bar chart](tree/images/03_feature_importance.png)
+![Feature importance horizontal bar chart](tree/main/images/03_feature_importance.png)
 
 Genre and content-intensity codes dominate. Release year, an engineered feature, outranks most raw metadata.
 
