@@ -61,7 +61,7 @@ Class distribution across 7,707 films — severe imbalance toward R-rated conten
 
 R-rated films represent ~60% of the dataset. NC-17 accounts for fewer than 0.5% — the central engineering challenge of this project.
 
-![Dataset composition bar chart](blob/main/01%20dataset%20composition.png)
+![Dataset composition bar chart](01%20dataset%20composition.png)
 
 ### Methodological Differences
 
